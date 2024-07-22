@@ -1,0 +1,26 @@
+{
+  "name": "Civitai Download Link Finder",
+  "description": "Finds download links for Civitai models",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://civitai.com/models/*"
+      ],
+      "js": ["src/content-script.ts"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [{
+    "resources": ["content.js"],
+    "matches": ["*://*.civitai.com/*"]
+  }]
+}
