@@ -1,7 +1,7 @@
 {
   "name": "civitai-download-link-finder",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Finds download links for Civitai models",
   "type": "module",
   "author": "shinshin86 <shinshin86npm@gmail.com> (https://github.com/shinshin86)",
